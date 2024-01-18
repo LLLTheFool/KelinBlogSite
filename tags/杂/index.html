@@ -431,22 +431,34 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/KelinBlogSite/2023/12/26/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0/">
+            <a class="abstract-title" href="/KelinBlogSite/2023/12/26/blog-setup-log/">
                 
                 <span class="abstract-title-text">博客搭建日记</span>
             </a>
             <div class="abstract-content">
                 
 今天尝试了使用Nodejs（javascript包管理工具）、git（版本管理工具）和Hexo（博客框架）来进行个人博客的搭建。
-一些问题：首先在搭建的过程中遇到的最大的问题是在将博客的静态文件部署到github上出现的问题：由于在最新版的Hexo的配置文件中并没有注释，导致不了解yml文件的新手对它的格式会有很多疑问（比如说我）。这就导致了如果想要进行网站部署的话需要改动的部分无法第一时间看出来，只能通过google来查阅解决问题。
-在本次搭建的过程中，由于Hexo将文件转换成静态文件的时候若不对配置文件进行修改会导致调用文件的相对路径出错而无法正确调用。
-解决办法是在blog的根目...
+常用指令（GitBash中）：创建一篇新文章：
+1hexo new &quot;文件名&quot;
+
+若使用中文文件名，在文章下方的Link连接中无法正常显示中文，而是显示每个中文文字对应的%编码，因此文件名应当使用英文而文件中的title再使用中文标题
+生成网页：
+1hexo g（hexo generate）
+
+本地预览网页：
+1hexo s（hexo server）
+
+部署到网站：
+1hexo d（hexo  deploy）
+
+清除缓存：
+1hexo c...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2023/12/27">
+                <div class="abstract-date" title="Last updated: 2024/01/18">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2023/12/26</span>
                 </div>
                 <!-- tags -->
@@ -595,7 +607,7 @@
         
         <li class="archive-post-item">
             <span class="archive-post-date">12/26</span>
-            <a class="archive-post-title" href="/KelinBlogSite/2023/12/26/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0/">博客搭建日记</a>
+            <a class="archive-post-title" href="/KelinBlogSite/2023/12/26/blog-setup-log/">博客搭建日记</a>
         </li>
     
     </div>
